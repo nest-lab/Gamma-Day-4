@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.Threading.Tasks;
+
+namespace SearchStringStuff
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine("Enter the substring OR string you want to search for");
+            
+            
+            string x = Console.ReadLine();
+            Console.WriteLine("enter the string or substring to be searched::");
+            string SearchedText = Console.ReadLine();
+            string[] myarray = new string[100000];
+            myarray = x.Split(' ');
+
+            //starts the initialization process 
+            int k = 0;
+            foreach (string v in myarray)
+            {
+                k = k + 1;
+                if (v == SearchedText)
+                {
+                    Console.WriteLine("The string found at position:" + i);
+
+                }
+
+            }
+            Console.WriteLine("-------------------------------------------");
+            Console.ReadLine();
+        }
+    }
+}
